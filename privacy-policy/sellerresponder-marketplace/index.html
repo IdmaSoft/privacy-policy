@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – SellerResponder</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+      color: #1a1a1a;
+      line-height: 1.7;
+      background: #ffffff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 4px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 36px;
+      color: #2563eb;
+    }
+
+    p, li {
+      font-size: 0.97rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .updated {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+    }
+
+    .highlight {
+      background: #f0f4ff;
+      border-left: 4px solid #2563eb;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin: 24px 0;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-size: 0.92em;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Privacy Policy</h1>
+
+  <p class="updated">
+    Application: <strong>SellerResponder Marketplace</strong><br/>
+    Package: <code>com.idmasoft.robotrespondermsg</code><br/>
+    Last updated: <strong>May 13, 2026</strong>
+  </p>
+
+  <div class="highlight">
+    <strong>Summary:</strong>
+    SellerResponder is an auto-reply assistant designed for online marketplace sellers.
+    All reply rules, message history, and app settings are stored exclusively on your device.
+    We do not collect, sell, or share your personal data or your customers' conversations.
+  </div>
+
+  <h2>1. Who We Are</h2>
+
+  <p>
+    SellerResponder is developed and maintained by <strong>IdmaSoft</strong>.
+    If you have any questions regarding this Privacy Policy, you may contact us at:
+    <a href="mailto:idmasoft.dev@gmail.com">idmasoft.dev@gmail.com</a>
+  </p>
+
+  <h2>2. What This App Does</h2>
+
+  <p>
+    SellerResponder helps sellers automatically respond to marketplace-related messages
+    received through supported messaging applications using Android notification features.
+  </p>
+
+  <p>
+    The app reads incoming notifications through Android's
+    <em>Notification Listener Service</em> and sends pre-configured automatic replies on your behalf.
+    All reply rules are created and managed locally by you on your own device.
+  </p>
+
+  <h2>3. Local Processing</h2>
+
+  <p>
+    All automatic reply detection, keyword matching, and message processing occur entirely on your device.
+    SellerResponder does not send conversations, messages, or customer data to external servers,
+    cloud systems, or AI services.
+  </p>
+
+  <h2>4. Data Stored On Your Device</h2>
+
+  <p>
+    The following information may be stored locally on your device only:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Marketplace rules:</strong>
+      Titles of your listings and the automatic question-and-answer rules you configure.
+    </li>
+
+    <li>
+      <strong>Reply history:</strong>
+      A local history of automatic replies, including timestamps, sender display names
+      (as shown in notifications), received question text, and sent replies.
+    </li>
+
+    <li>
+      <strong>Application preferences:</strong>
+      Settings such as delays, cooldowns, deduplication windows, notification preferences,
+      and service states.
+    </li>
+
+    <li>
+      <strong>Built-in intent patterns:</strong>
+      Internal keyword templates used to detect common seller questions
+      (price, availability, delivery, etc.).
+    </li>
+  </ul>
+
+  <p>
+    This information is never transmitted to IdmaSoft servers.
+  </p>
+
+  <h2>5. Notification Access Permission</h2>
+
+  <p>
+    SellerResponder requires Android's
+    <strong>Notification Listener</strong> permission
+    (<code>android.permission.BIND_NOTIFICATION_LISTENER_SERVICE</code>)
+    to detect incoming marketplace-related messages and generate automatic replies.
+  </p>
+
+  <ul>
+    <li>
+      The app only processes notifications from supported messaging applications related to marketplace conversations.
+    </li>
+
+    <li>
+      Supported packages may include:
+      <code>com.facebook.orca</code>,
+      <code>com.facebook.mlite</code>,
+      and <code>com.facebook.katana</code>.
+    </li>
+
+    <li>
+      Notifications from unrelated applications are ignored.
+    </li>
+
+    <li>
+      Message content is never uploaded to cloud services or external servers.
+    </li>
+
+    <li>
+      Reply history stored locally on your device can be deleted at any time from within the app.
+    </li>
+  </ul>
+
+  <h2>6. Other Permissions Used</h2>
+
+  <ul>
+    <li>
+      <strong>POST_NOTIFICATIONS:</strong>
+      Used to display service status notifications and optional notifications when automatic replies are sent.
+    </li>
+
+    <li>
+      <strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE:</strong>
+      Required to keep the auto-reply service running reliably in the background.
+    </li>
+
+    <li>
+      <strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS:</strong>
+      Optionally requested to reduce interruptions caused by aggressive battery-saving systems on some devices.
+    </li>
+  </ul>
+
+  <h2>7. Firebase Crashlytics and Analytics</h2>
+
+  <p>
+    SellerResponder uses <strong>Firebase Crashlytics</strong> and
+    <strong>Firebase Analytics</strong> provided by Google to improve app stability and reliability.
+  </p>
+
+  <p>
+    These services may collect:
+  </p>
+
+  <ul>
+    <li>Crash reports and diagnostic logs.</li>
+    <li>Device model, Android version, and app version.</li>
+    <li>Anonymous usage statistics and app performance information.</li>
+  </ul>
+
+  <p>
+    SellerResponder does <strong>not</strong> send:
+  </p>
+
+  <ul>
+    <li>Customer messages</li>
+    <li>Sender names</li>
+    <li>Marketplace conversations</li>
+    <li>Reply contents</li>
+    <li>Personally identifiable information</li>
+  </ul>
+
+  <p>
+    Firebase services are governed by Google's Privacy Policy:
+    <a href="https://policies.google.com/privacy" target="_blank">
+      https://policies.google.com/privacy
+    </a>
+  </p>
+
+  <h2>8. Third-Party Services</h2>
+
+  <p>
+    SellerResponder interacts with supported messaging applications exclusively through
+    Android's official notification and reply APIs.
+  </p>
+
+  <p>
+    SellerResponder is an independent application and is not affiliated with,
+    endorsed by, or sponsored by Meta Platforms, Inc.
+  </p>
+
+  <h2>9. Data Retention and Deletion</h2>
+
+  <ul>
+    <li>
+      All locally stored data can be deleted by the user at any time from within the app.
+    </li>
+
+    <li>
+      Uninstalling the app removes all local application data from the device.
+    </li>
+
+    <li>
+      Firebase crash data retention is managed according to Google's Firebase policies.
+    </li>
+  </ul>
+
+  <h2>10. Children's Privacy</h2>
+
+  <p>
+    SellerResponder is not intended for children under the age of 13.
+    We do not knowingly collect personal information from children.
+  </p>
+
+  <h2>11. Changes to This Policy</h2>
+
+  <p>
+    We may update this Privacy Policy periodically.
+    Any updates will be reflected on this page along with a revised "Last updated" date.
+  </p>
+
+  <h2>12. Contact Us</h2>
+
+  <p>
+    If you have questions or concerns regarding this Privacy Policy, contact:
+    <br/>
+    <a href="mailto:idmasoft.dev@gmail.com">idmasoft.dev@gmail.com</a>
+  </p>
+
+  <footer>
+    &copy; 2026 IdmaSoft. SellerResponder is an independent application and is not affiliated with Meta Platforms, Inc.
+  </footer>
+
+</body>
+</html>
